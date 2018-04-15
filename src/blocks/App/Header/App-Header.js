@@ -8,10 +8,10 @@ export default decl({
   block: 'App',
   elem: 'Header',
   tag: 'header',
-  content() {
+  content () {
     return (
       <Fragment>
-        <Bem elem="Logo" tag="img" src={logoSvg} alt="logo"/>
+        <Bem elem="Logo" tag="img" src={logoSvg} alt="logo" />
         <Bem elem="Title" tag="h1">Welcome to React</Bem>
       </Fragment>
     );
