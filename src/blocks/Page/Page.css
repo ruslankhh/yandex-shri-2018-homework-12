@@ -1,5 +1,23 @@
+:root {
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+@media (min-width: 728px) {
+  :root {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1281px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
 body {
+  font-family: "YS Text", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  position: relative;
 }

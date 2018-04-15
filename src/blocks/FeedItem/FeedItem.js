@@ -2,17 +2,17 @@ import React, { Fragment } from 'react';
 import { decl } from 'bem-react-core';
 
 import Header from 'e:Header';
-import Main from 'e:Main';
-
-import data from './../../data/data';
+import Body from 'e:Body';
+import Footer from 'e:Footer';
 
 export default decl({
-  block: 'App',
+  block: 'FeedItem',
   content () {
     return (
       <Fragment>
         <Header />
-        <Main {...data} />
+        <Body />
+        <Footer />
       </Fragment>
     );
   }

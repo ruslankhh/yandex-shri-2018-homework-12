@@ -1,9 +1,9 @@
 .App-Logo {
-  animation: App-Logo-Spin infinite 20s linear;
-  height: 80px;
+  height: 2.1rem;
 }
 
-@keyframes App-Logo-Spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media (min-width: 992px) {
+  .App-Logo {
+    height: 2.8rem;
+  }
 }
