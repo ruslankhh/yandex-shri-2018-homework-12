@@ -1,0 +1,21 @@
+.Container-Grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: 0;
+  grid-row-gap: 2.9rem;
+}
+
+@media (min-width: 361px) {
+  .Container-Grid {
+    grid-column-gap: 1.6rem;
+    grid-auto-flow: dense;
+  }
+}
+
+@media (min-width: 728px) {
+  .Container-Grid {
+    grid-column-gap: 1.6rem;
+    grid-auto-flow: initial;
+  }
+}

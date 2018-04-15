@@ -1,18 +1,28 @@
 import React, { Fragment } from 'react';
-import { decl } from 'bem-react-core';
+import { decl, Bem } from 'bem-react-core';
 
 import Header from 'e:Header';
 import Body from 'e:Body';
 import Footer from 'e:Footer';
 
+import 'e:Container';
+
 export default decl({
   block: 'FeedItem',
-  content () {
+  mods ({ size, image, description }) {
+    return {
+      size,
+      type: `t${image ? 'i' : ''}${description ? 'd' : ''}`
+    };
+  },
+  content (props) {
     return (
       <Fragment>
-        <Header />
-        <Body />
-        <Footer />
+        <Bem elem="Container" tag="a" href="#">
+          <Header {...props} />
+          <Body {...props} />
+          <Footer {...props} />
+        </Bem>
       </Fragment>
     );
   }

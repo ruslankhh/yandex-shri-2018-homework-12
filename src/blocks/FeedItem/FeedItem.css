@@ -1,0 +1,5 @@
+@media screen {
+  .FeedItem:hover .FeedItem-ImageContainer::after {
+    opacity: 0.4;
+  }
+}

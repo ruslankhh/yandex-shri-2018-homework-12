@@ -1,3 +1,21 @@
-.FeedItem-Header {
-  font-size: inherit;
+.FeedItem-Footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 1.4rem;
+  line-height: 1.43em;
+  grid-column: span 3;
+  position: relative;
+}
+
+.FeedItem-DescriptionContainer {
+  grid-column: span 10;
+  overflow: hidden;
+}
+
+.FeedItem-ChannelName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
