@@ -11,7 +11,7 @@ export default decl({
   block: 'FeedItem',
   elem: 'Body',
   content (props) {
-    const { image } = props;
+    const { image, href = '#' } = props;
     let image2, image3, imageSet;
 
     if (image) {
@@ -23,7 +23,7 @@ export default decl({
     return (
       <Fragment>
         {image ? (
-          <Bem elem="ImageContainer">
+          <Bem elem="ImageContainer" tag="a" href={href}>
             <Bem elem="Image" tag="img" src={image} srcSet={imageSet}></Bem>
           </Bem>
         ) : ''}

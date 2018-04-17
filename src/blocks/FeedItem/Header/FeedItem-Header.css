@@ -17,6 +17,9 @@
 }
 
 .FeedItem-Title {
+  display: block;
   max-height: 3.63157895em;
   overflow: hidden;
+  text-decoration: none;
 }
+

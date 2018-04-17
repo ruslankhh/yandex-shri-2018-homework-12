@@ -12,12 +12,12 @@ export default decl({
   elem: 'Header',
   tag: 'header',
   content (props) {
-    const { title, titleColor } = props;
+    const { title, titleColor, href = '#' } = props;
 
     return (
       <Fragment>
         <Bem elem="TitleContainer">
-          <Bem elem="Title" style={{ color: titleColor }}>{title}</Bem>
+          <Bem elem="Title" tag="a" href={href} style={{ color: titleColor }}>{title}</Bem>
           <Bem elem="ButtonGroup" mods={{ place: 'header' }}>
             <Button mods={{ type: 'ghost' }} mix={{ block: 'FeedItem', elem: 'Button', mods: { type: 'actions' } }}>
               <Icon mods={{ type: 'actions' }}></Icon>

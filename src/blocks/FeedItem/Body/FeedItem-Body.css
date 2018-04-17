@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.FeedItem-ImageContainer {
+  display: block;
+}
+
 .FeedItem-ImageContainer::after {
   display: block;
   content: "";

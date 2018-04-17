@@ -18,7 +18,7 @@ export default decl({
   content (props) {
     return (
       <Fragment>
-        <Bem elem="Container" tag="a" href="#">
+        <Bem elem="Container">
           <Header {...props} />
           <Body {...props} />
           <Footer {...props} />
