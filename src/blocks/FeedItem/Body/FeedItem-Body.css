@@ -26,3 +26,9 @@
   display: block;
   width: 100%;
 }
+
+@media screen {
+  .FeedItem-ImageContainer:hover::after {
+    opacity: 0.4;
+  }
+}

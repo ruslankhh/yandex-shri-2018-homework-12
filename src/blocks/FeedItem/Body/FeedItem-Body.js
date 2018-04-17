@@ -1,11 +1,13 @@
 import React, { Fragment } from 'react';
 import { decl, Bem } from 'bem-react-core';
 
+import Image from 'e:Image';
+
 export default decl({
   block: 'FeedItem',
   elem: 'Body',
   content (props) {
-    const { children, image, href = '#' } = props;
+    const { children, title, image, href = '#' } = props;
     let image2, image3, imageSet;
 
     if (image) {
@@ -17,7 +19,7 @@ export default decl({
     return (
       <Fragment>
         <Bem elem="ImageContainer" tag="a" href={href}>
-          <Bem elem="Image" tag="img" src={image} srcSet={imageSet}></Bem>
+          <Image src={image} srcSet={imageSet} alt={title} />
         </Bem>
         {children}
       </Fragment>
