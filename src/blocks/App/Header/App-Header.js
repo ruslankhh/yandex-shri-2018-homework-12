@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { decl } from 'bem-react-core';
 
-import Container from 'b:Container m:center';
+import Container from 'b:Container m:align=center';
 import Logo from 'e:Logo';
 import image from '../Logo/App-Logo.png';
 import image2 from '../Logo/App-Logo@2x.png';
@@ -16,7 +16,7 @@ export default decl({
 
     return (
       <Fragment>
-        <Container center>
+        <Container align="center">
           <Logo src={image} srcSet={imageSet} alt="Logo" />
         </Container>
       </Fragment>
