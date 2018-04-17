@@ -13,9 +13,10 @@ export default decl({
   tag: 'header',
   content () {
     const imageSet = `${image2} 2x, ${image3} 3x`;
+
     return (
       <Fragment>
-        <Container mods={{ center: true }}>
+        <Container center>
           <Bem block="App" elem="Logo" tag="img" src={image} srcSet={imageSet} alt="Logo" />
         </Container>
       </Fragment>
