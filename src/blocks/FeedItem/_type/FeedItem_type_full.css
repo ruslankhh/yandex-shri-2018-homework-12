@@ -1,0 +1,9 @@
+.FeedItem_type_full .FeedItem-ButtonGroup {
+  grid-column: span 2;
+}
+
+@media (min-width: 576px) {
+  .FeedItem_type_full.FeedItem_size_l .FeedItem-ButtonGroup {
+    grid-column: span 12;
+  }
+}

@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+.FeedItem-ButtonGroup {
+  position: relative;
+}
+
 @media screen {
   .FeedItem:hover .FeedItem-ImageContainer::after {
     opacity: 0.4;

@@ -1,17 +1,11 @@
 import React, { Fragment } from 'react';
 import { decl, Bem } from 'bem-react-core';
 
-import Button from 'b:Button m:type=ghost';
-import Icon from 'b:Icon m:type=heart';
-
-import 'e:ButtonGroup m:place=body';
-import 'e:Button m:type=heart';
-
 export default decl({
   block: 'FeedItem',
   elem: 'Body',
   content (props) {
-    const { image, href = '#' } = props;
+    const { children, image, href = '#' } = props;
     let image2, image3, imageSet;
 
     if (image) {
@@ -22,16 +16,10 @@ export default decl({
 
     return (
       <Fragment>
-        {image ? (
-          <Bem elem="ImageContainer" tag="a" href={href}>
-            <Bem elem="Image" tag="img" src={image} srcSet={imageSet}></Bem>
-          </Bem>
-        ) : ''}
-        <Bem elem="ButtonGroup" mods={{ place: 'body' }}>
-          <Button mods={{ type: 'ghost' }} mix={{ block: 'FeedItem', elem: 'Button', mods: { type: 'heart' } }}>
-            <Icon mods={{ type: 'heart' }}></Icon>
-          </Button>
+        <Bem elem="ImageContainer" tag="a" href={href}>
+          <Bem elem="Image" tag="img" src={image} srcSet={imageSet}></Bem>
         </Bem>
+        {children}
       </Fragment>
     );
   }

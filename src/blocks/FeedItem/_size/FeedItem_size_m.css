@@ -26,11 +26,6 @@
   max-height: calc(3 * 1.43em);
 }
 
-.FeedItem_size_m .FeedItem-ButtonGroup_place_header,
-.FeedItem_size_m .FeedItem-ButtonGroup_place_body {
-  display: none;
-}
-
 @media (min-width: 576px) {
   .FeedItem_size_m {
     grid-column: span 6;
