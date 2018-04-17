@@ -1,18 +1,18 @@
 .FeedItem-Header {
   font-weight: bold;
   grid-column: span 3;
-  margin: 0 -0.8rem;
 }
 
 .FeedItem-TitleContainer {
   box-sizing: border-box;
   background-color: #fff;
   max-height: 4.10526316em;
+  margin: 0 -0.8rem;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
   padding-bottom: 0.9rem;
   position: relative;
-  width: 100%;
+  width: calc(100% + 2 * 0.8rem);
   z-index: 1;
 }
 
