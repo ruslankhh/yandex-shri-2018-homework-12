@@ -8,6 +8,9 @@ export default decl({
   block: 'FeedItem',
   elem: 'Button',
   tag: 'button',
+  attrs () {
+    return { type: 'button' };
+  },
   mods ({ type }) {
     return { type };
   },
