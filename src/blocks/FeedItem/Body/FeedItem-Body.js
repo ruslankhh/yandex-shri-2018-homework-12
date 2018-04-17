@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
-import { decl, Bem } from 'bem-react-core';
+import { decl } from 'bem-react-core';
 
 import Image from 'e:Image';
+import Link from 'b:Link';
 
 export default decl({
   block: 'FeedItem',
@@ -18,9 +19,9 @@ export default decl({
 
     return (
       <Fragment>
-        <Bem elem="ImageContainer" tag="a" href={href}>
+        <Link href={href} mix={{ block: 'FeedItem', elem: 'ImageContainer' }}>
           <Image src={image} srcSet={imageSet} alt={title} />
-        </Bem>
+        </Link>
         {children}
       </Fragment>
     );

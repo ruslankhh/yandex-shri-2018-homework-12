@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import { decl, Bem } from 'bem-react-core';
 
+import Link from 'b:Link';
+
 export default decl({
   block: 'FeedItem',
   elem: 'Header',
@@ -10,9 +12,9 @@ export default decl({
 
     return (
       <Fragment>
-        <Bem elem="TitleContainer">
-          <Bem elem="Title" tag="a" href={href} style={{ color: titleColor }}>{title}</Bem>
-        </Bem>
+        <Link href={href} mix={{ block: 'FeedItem', elem: 'TitleContainer' }}>
+          <Bem block="FeedItem" elem="Title" style={{ color: titleColor }}>{title}</Bem>
+        </Link>
         {children}
       </Fragment>
     );
