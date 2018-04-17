@@ -18,11 +18,11 @@ export default decl({
       <Fragment>
         <Bem elem="TitleContainer">
           <Bem elem="Title" tag="a" href={href} style={{ color: titleColor }}>{title}</Bem>
-          <Bem elem="ButtonGroup" mods={{ place: 'header' }}>
-            <Button mods={{ type: 'ghost' }} mix={{ block: 'FeedItem', elem: 'Button', mods: { type: 'actions' } }}>
-              <Icon mods={{ type: 'actions' }}></Icon>
-            </Button>
-          </Bem>
+        </Bem>
+        <Bem elem="ButtonGroup" mods={{ place: 'header' }}>
+          <Button mods={{ type: 'ghost' }} mix={{ block: 'FeedItem', elem: 'Button', mods: { type: 'actions' } }}>
+            <Icon mods={{ type: 'actions' }}></Icon>
+          </Button>
         </Bem>
       </Fragment>
     );

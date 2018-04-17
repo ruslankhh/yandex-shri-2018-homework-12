@@ -1,6 +1,7 @@
 .FeedItem-Header {
   font-weight: bold;
   grid-column: span 3;
+  z-index: 1;
 }
 
 .FeedItem-TitleContainer {
@@ -13,7 +14,6 @@
   padding-bottom: 0.9rem;
   position: relative;
   width: calc(100% + 2 * 0.8rem);
-  z-index: 1;
 }
 
 .FeedItem-Title {
