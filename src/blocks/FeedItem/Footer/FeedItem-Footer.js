@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react';
 import { decl, Bem } from 'bem-react-core';
 
-import 'e:Control m:place=footer';
-import 'e:ControlItem m:type=actions m:type=heart';
+import Button from 'b:Button m:type=ghost';
+import Icon from 'b:Icon m:type=actions m:type=heart';
+
+import 'e:ButtonGroup m:place=footer';
+import 'e:Button m:type=actions m:type=heart';
 
 export default decl({
   block: 'FeedItem',
@@ -19,9 +22,13 @@ export default decl({
           </Bem>
         </Bem>
         <Bem elem="ChannelName">{channelName}</Bem>
-        <Bem elem="Control" mods={{ place: 'footer' }}>
-          <Bem elem="ControlItem" mods={{ type: 'actions' }}></Bem>
-          <Bem elem="ControlItem" mods={{ type: 'heart' }}></Bem>
+        <Bem elem="ButtonGroup" mods={{ place: 'footer' }}>
+          <Button mods={{ type: 'ghost' }} mix={{ block: 'FeedItem', elem: 'Button', mods: { type: 'actions' } }}>
+            <Icon mods={{ type: 'actions' }}></Icon>
+          </Button>
+          <Button mods={{ type: 'ghost' }} mix={{ block: 'FeedItem', elem: 'Button', mods: { type: 'heart' } }}>
+            <Icon mods={{ type: 'heart' }}></Icon>
+          </Button>
         </Bem>
       </Fragment>
     );

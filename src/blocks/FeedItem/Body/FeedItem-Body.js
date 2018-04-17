@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react';
 import { decl, Bem } from 'bem-react-core';
 
-import 'e:Control m:place=body';
-import 'e:ControlItem m:type=heart';
+import Button from 'b:Button m:type=ghost';
+import Icon from 'b:Icon m:type=heart';
+
+import 'e:ButtonGroup m:place=body';
+import 'e:Button m:type=heart';
 
 export default decl({
   block: 'FeedItem',
@@ -24,8 +27,10 @@ export default decl({
             <Bem elem="Image" tag="img" src={image} srcSet={imageSet}></Bem>
           </Bem>
         ) : ''}
-        <Bem elem="Control" mods={{ place: 'body' }}>
-          <Bem elem="ControlItem" mods={{ type: 'heart' }}></Bem>
+        <Bem elem="ButtonGroup" mods={{ place: 'body' }}>
+          <Button mods={{ type: 'ghost' }} mix={{ block: 'FeedItem', elem: 'Button', mods: { type: 'heart' } }}>
+            <Icon mods={{ type: 'heart' }}></Icon>
+          </Button>
         </Bem>
       </Fragment>
     );

@@ -19,17 +19,17 @@
   padding-top: 0.8rem;
 }
 
-.FeedItem_type_td .FeedItem-Control {
+.FeedItem_type_td .FeedItem-ButtonGroup {
   grid-column: span 6;
   height: 3rem;
   padding-top: 0.8rem;
 }
 
-.FeedItem_type_td .FeedItem-Control_place_header {
+.FeedItem_type_td .FeedItem-ButtonGroup_place_header {
   display: none;
 }
 
-.FeedItem_type_td .FeedItem-ControlItem_type_actions {
+.FeedItem_type_td .FeedItem-Button_type_actions {
   bottom: 0.7rem;
   right: 4.5rem;
 }

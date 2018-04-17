@@ -1,9 +1,7 @@
-.FeedItem-ControlItem {
+.Icon {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   height: 2rem;
   width: 2rem;
-  padding: 0.5rem;
-  position: absolute;
 }

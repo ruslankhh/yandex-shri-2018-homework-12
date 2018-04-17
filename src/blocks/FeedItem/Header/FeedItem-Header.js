@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react';
 import { decl, Bem } from 'bem-react-core';
 
-import 'e:Control m:place=header';
-import 'e:ControlItem m:type=actions';
+import Button from 'b:Button m:type=ghost';
+import Icon from 'b:Icon m:type=actions';
+
+import 'e:ButtonGroup m:place=header';
+import 'e:Button m:type=actions';
 
 export default decl({
   block: 'FeedItem',
@@ -15,8 +18,10 @@ export default decl({
       <Fragment>
         <Bem elem="TitleContainer">
           <Bem elem="Title" style={{ color: titleColor }}>{title}</Bem>
-          <Bem elem="Control" mods={{ place: 'header' }}>
-            <Bem elem="ControlItem" mods={{ type: 'actions' }}></Bem>
+          <Bem elem="ButtonGroup" mods={{ place: 'header' }}>
+            <Button mods={{ type: 'ghost' }} mix={{ block: 'FeedItem', elem: 'Button', mods: { type: 'actions' } }}>
+              <Icon mods={{ type: 'actions' }}></Icon>
+            </Button>
           </Bem>
         </Bem>
       </Fragment>

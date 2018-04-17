@@ -42,8 +42,8 @@
   max-height: calc(3 * 1.43em);
 }
 
-.FeedItem_size_l .FeedItem-Control_place_header,
-.FeedItem_size_l .FeedItem-Control_place_body {
+.FeedItem_size_l .FeedItem-ButtonGroup_place_header,
+.FeedItem_size_l .FeedItem-ButtonGroup_place_body {
   display: none;
 }
 
@@ -64,21 +64,21 @@
   }
 
   .FeedItem_size_l .FeedItem-DescriptionContainer,
-  .FeedItem_size_l .FeedItem-Control_place_footer {
+  .FeedItem_size_l .FeedItem-ButtonGroup_place_footer {
     grid-column: span 12;
   }
 
-  .FeedItem_size_l .FeedItem-Control {
+  .FeedItem_size_l .FeedItem-ButtonGroup {
     height: 2.7rem;
   }
 
-  .FeedItem_size_l .FeedItem-ControlItem_type_actions {
+  .FeedItem_size_l .FeedItem-Button_type_actions {
     top: auto;
     bottom: -0.2rem;
     left: -0.1rem;
   }
 
-  .FeedItem_size_l .FeedItem-ControlItem_type_heart {
+  .FeedItem_size_l .FeedItem-Button_type_heart {
     bottom: -0.4rem;
     right: 0.2rem;
   }

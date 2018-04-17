@@ -26,8 +26,8 @@
   max-height: calc(3 * 1.43em);
 }
 
-.FeedItem_size_m .FeedItem-Control_place_header,
-.FeedItem_size_m .FeedItem-Control_place_body {
+.FeedItem_size_m .FeedItem-ButtonGroup_place_header,
+.FeedItem_size_m .FeedItem-ButtonGroup_place_body {
   display: none;
 }
 

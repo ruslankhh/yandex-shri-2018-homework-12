@@ -17,12 +17,12 @@
   padding-bottom: 0;
 }
 
-.FeedItem_size_s .FeedItem-ControlItem_type_actions {
+.FeedItem_size_s .FeedItem-Button_type_actions {
   top: auto;
   bottom: -4.2rem;
 }
 
-.FeedItem_size_s .FeedItem-ControlItem_type_heart {
+.FeedItem_size_s .FeedItem-Button_type_heart {
   bottom: 0.7rem;
 }
 
