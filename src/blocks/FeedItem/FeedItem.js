@@ -5,8 +5,6 @@ import Header from 'e:Header';
 import Body from 'e:Body';
 import Footer from 'e:Footer';
 
-import 'e:Container';
-
 export default decl({
   block: 'FeedItem',
   mods ({ size, image, description }) {
