@@ -11,7 +11,7 @@ export default decl({
     this.state = { feedItems: [] };
   },
   didMount () {
-    fetch('/data/data.json')
+    fetch(process.env.PUBLIC_URL + '/data/data.json')
       .then(response => response.clone().json())
       .then(data => {
         this.setState({ feedItems: data.feedItems });
