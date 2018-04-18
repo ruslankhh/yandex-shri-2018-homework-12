@@ -1,0 +1,6 @@
+{
+  "main.css": "static/css/desktop.css",
+  "main.css.map": "static/css/desktop.css.map",
+  "main.js": "static/js/desktop.js",
+  "main.js.map": "static/js/desktop.js.map"
+}
