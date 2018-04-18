@@ -1,9 +1,3 @@
 .App-Logo {
   height: 2.1rem;
 }
-
-@media (min-width: 992px) {
-  .App-Logo {
-    height: 2.8rem;
-  }
-}

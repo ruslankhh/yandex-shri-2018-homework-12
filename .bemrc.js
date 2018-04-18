@@ -6,20 +6,21 @@ module.exports = {
       scheme: 'nested'
     },
     {
-      layer: 'desktop',
-      path: 'src/desktop',
+      layer: 'tablet',
+      path: 'src/tablet',
       scheme: 'nested'
     },
     {
-      layer: 'touch',
-      path: 'src/touch',
+      layer: 'desktop',
+      path: 'src/desktop',
       scheme: 'nested'
     }
   ],
   // remove sets to build one universal bundle for index.html
   sets: {
-    desktop: 'common desktop',
-    touch: 'common touch'
+    mobile: 'common',
+    tablet: 'common tablet',
+    desktop: 'common tablet desktop',
   },
   modules: {
     'bem-tools': {

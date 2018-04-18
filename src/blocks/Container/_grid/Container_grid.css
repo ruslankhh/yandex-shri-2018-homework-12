@@ -12,10 +12,3 @@
     grid-auto-flow: dense;
   }
 }
-
-@media (min-width: 728px) {
-  .Container_grid {
-    grid-column-gap: 1.6rem;
-    grid-auto-flow: initial;
-  }
-}

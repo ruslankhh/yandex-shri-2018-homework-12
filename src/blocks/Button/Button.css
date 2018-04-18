@@ -2,10 +2,6 @@
   touch-action: manipulation;
 }
 
-.Button:hover {
-  filter: brightness(0.7);
-}
-
 .Button:active {
   filter: brightness(0.4);
 }
