@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { decl } from 'bem-react-core';
+import 'whatwg-fetch';
 
 import Header from 'e:Header';
 import Main from 'e:Main';
