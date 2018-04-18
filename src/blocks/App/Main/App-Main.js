@@ -8,7 +8,7 @@ export default decl({
   block: 'App',
   elem: 'Main',
   tag: 'main',
-  content ({ feedItems }) {
+  content ({ feedItems = [] }) {
     return (
       <Fragment>
         <Container grid align="center">

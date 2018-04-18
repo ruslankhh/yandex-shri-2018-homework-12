@@ -4,15 +4,24 @@ import { decl } from 'bem-react-core';
 import Header from 'e:Header';
 import Main from 'e:Main';
 
-import data from './../../data/data';
-
 export default decl({
   block: 'App',
+  willInit () {
+    this.state = { feedItems: [] };
+  },
+  didMount () {
+    fetch('/data/data.json')
+      .then(response => response.clone().json())
+      .then(data => {
+        this.setState({ feedItems: data.feedItems });
+      })
+      .catch(err => console.warn(err));
+  },
   content () {
     return (
       <Fragment>
         <Header />
-        <Main {...data} />
+        <Main feedItems={this.state.feedItems} />
       </Fragment>
     );
   }
